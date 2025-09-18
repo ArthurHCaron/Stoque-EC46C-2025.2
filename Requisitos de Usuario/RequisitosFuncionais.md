@@ -4,15 +4,15 @@
 
 | ID   |                                    Requisito                                    | Prioridade | Requisitos Relacionados |
 | :--: | :-----------------------------------------------------------------------------: | :--------: | :---------------------: |
-| RF01 |              O usuário deve poder cadastrar produtos                            |  Alta      |          RF02           |
-| RF02 |           O usuário deve poder visualizar produtos cadastrados                  |  Alta      |          RF01           |
-| RF03 |      O usuário deve poder alterar dados de produtos cadastrados                 |  Média     |        RF01/RF02        |
-| RF04 |             O usuário deve poder deletar produtos cadastrados                   |  Média     |        RF01/RF02        |
+| RF01 |                    O administrador pode cadastrar produtos                      |  Alta      |          RF02           |
+| RF02 |     O administrador ou conferista pode visualizar produtos cadastrados          |  Alta      |          RF01           |
+| RF03 |      O administrador pode alterar dados de produtos cadastrados                 |  Média     |        RF01/RF02        |
+| RF04 |             O administrador pode deletar produtos cadastrados                   |  Média     |        RF01/RF02        |
 | RF05 |                       O usuário pode se cadastrar                               |  Alta      |                         |
 | RF06 |                      O usuário pode efetuar login                               |  Alta      |          RF05           |
-| RF07 |       O usuário pode efetuar compra de produtos dos fornecedores                |  Baixa     |                         |
-| RF08 |           O usuário pode emitir nota fiscal da venda de produtos                |  Média     |                         |
-| RF09 | O usuário pode cadastrar notas fiscais da aquisição de produtos de fornecedores |  Média     |          RF07           | 
+| RF07 |       O administrador pode efetuar compra de produtos dos fornecedores          |  Baixa     |                         |
+| RF08 |     O administrador ou conferista pode emitir nota fiscal da venda de produtos  |  Média     |                         |
+| RF09 | O administrador ou conferista pode cadastrar notas fiscais da aquisição de\ produtos de fornecedores |  Média     |          RF07           | 
 
 
 <div style="text-align: center">
