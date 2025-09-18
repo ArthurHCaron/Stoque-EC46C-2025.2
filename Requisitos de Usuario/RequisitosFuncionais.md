@@ -12,7 +12,7 @@
 | RF06 |                      O usuário pode efetuar login                               |  Alta      |          RF05           |
 | RF07 |       O administrador pode efetuar compra de produtos dos fornecedores          |  Baixa     |                         |
 | RF08 |     O administrador ou conferista pode emitir nota fiscal da venda de produtos  |  Média     |                         |
-| RF09 | O administrador ou conferista pode cadastrar notas fiscais da aquisição de\ produtos de fornecedores |  Média     |          RF07           | 
+| RF09 | O administrador ou conferista pode cadastrar notas fiscais da aquisição de produtos de fornecedores |  Média     |          RF07           | 
 
 
 <div style="text-align: center">
