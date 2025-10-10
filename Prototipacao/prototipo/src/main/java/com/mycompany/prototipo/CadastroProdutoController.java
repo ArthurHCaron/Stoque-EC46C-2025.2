@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 
 /**
  * FXML Controller class
@@ -32,13 +33,16 @@ public class CadastroProdutoController implements Initializable {
     private Button btSalvar;
     @FXML
     private Button btCancelar;
+    @FXML
+    private BorderPane janela;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        janela.setStyle("-fx-alignment: center;");
+        
     }    
 
     @FXML
@@ -67,5 +71,5 @@ public class CadastroProdutoController implements Initializable {
         cxQuantidade.clear();
         cxLocalizacao.clear();
     }
-    
+                 
 }
