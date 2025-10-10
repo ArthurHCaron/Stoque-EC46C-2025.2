@@ -20,8 +20,8 @@ import javafx.stage.Stage;
 public class Main extends Application {
     private Scene login;
     private Scene cadastroP;
-    private Stage loginStage;
-    private Stage cadastroPStage;
+    private static Stage loginStage;
+    private static Stage cadastroPStage;
     
     
     @Override
@@ -73,6 +73,14 @@ public class Main extends Application {
         stage.setTitle("Seleção de Protótipo");
         stage.setScene(scene);       
         stage.show();
+    }
+    
+    public static void hideLogin(){
+        loginStage.hide();
+    }
+    public static void showLogin(){
+        loginStage.setIconified(false);
+        loginStage.show();
     }
 
     /**

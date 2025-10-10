@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane prefHeight="298.0" prefWidth="350.0" stylesheets="@themes/style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.prototipo.LoginController">
    <center>
       <GridPane alignment="CENTER" prefHeight="255.0" prefWidth="404.0" BorderPane.alignment="CENTER">
@@ -58,7 +57,7 @@
                 <RowConstraints maxHeight="130.00003051757812" minHeight="10.0" prefHeight="73.33331298828125" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="cxUsuario" maxWidth="-Infinity" prefHeight="29.0" prefWidth="269.0" promptText="Digite seu usuário" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                  <TextField fx:id="cxUsuario" maxWidth="-Infinity" prefHeight="29.0" prefWidth="269.0" promptText="Digite seu usuário ou E-mail" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>

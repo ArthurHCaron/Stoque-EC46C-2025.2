@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane prefHeight="298.0" prefWidth="350.0" stylesheets="@themes/style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.prototipo.LoginController">
    <center>
       <GridPane alignment="CENTER" prefHeight="255.0" prefWidth="404.0" BorderPane.alignment="CENTER">
@@ -20,11 +19,11 @@
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="243.0" minHeight="10.0" prefHeight="190.33329264322916" valignment="BOTTOM" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="140.33333333333331" minHeight="10.0" prefHeight="101.00004069010419" valignment="TOP" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="243.0" minHeight="10.0" prefHeight="158.33335367838544" valignment="BOTTOM" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="140.33333333333331" minHeight="10.0" prefHeight="75.66664632161456" valignment="TOP" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="59.0" prefWidth="404.0" spacing="20.0" GridPane.rowIndex="1">
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="350.0" spacing="20.0" GridPane.rowIndex="1">
                <children>
                   <Button fx:id="btCadastrar" onAction="#handleCadastro" text="Cadastrar-se">
                      <font>
@@ -48,7 +47,7 @@
                   <Insets bottom="10.0" />
                </GridPane.margin>
             </HBox>
-            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="123.0" prefWidth="332.0" GridPane.halignment="CENTER">
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="133.0" prefWidth="332.0" GridPane.halignment="CENTER">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="217.33331298828125" minWidth="10.0" prefWidth="78.66664632161458" />
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="335.99999237060547" minWidth="10.0" prefWidth="254.00002034505206" />
@@ -58,7 +57,7 @@
                 <RowConstraints maxHeight="130.00003051757812" minHeight="10.0" prefHeight="73.33331298828125" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="cxUsuario" maxWidth="-Infinity" prefHeight="29.0" prefWidth="269.0" promptText="Digite seu usuário" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                  <TextField fx:id="cxUsuario" maxWidth="-Infinity" prefHeight="29.0" prefWidth="269.0" promptText="Digite seu usuário ou E-mail" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -104,7 +103,7 @@
       </GridPane>
    </center>
    <top>
-      <Label prefHeight="31.0" prefWidth="49.0" text="Login" BorderPane.alignment="CENTER">
+      <Label prefHeight="63.0" prefWidth="49.0" text="Login" BorderPane.alignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
