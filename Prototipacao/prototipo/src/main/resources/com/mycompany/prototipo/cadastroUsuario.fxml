@@ -19,11 +19,12 @@
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
          </columnConstraints>
          <rowConstraints>
-            <RowConstraints maxHeight="243.0" minHeight="10.0" prefHeight="230.66666666666666" valignment="BOTTOM" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="140.33333333333331" minHeight="10.0" prefHeight="101.33333333333334" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="243.0" minHeight="10.0" prefHeight="94.00001017252603" valignment="BOTTOM" vgrow="NEVER" />
+            <RowConstraints maxHeight="250.66666666666666" minHeight="10.0" prefHeight="247.33332316080728" valignment="BOTTOM" vgrow="NEVER" />
+            <RowConstraints maxHeight="140.33333333333331" minHeight="10.0" prefHeight="101.33333333333334" valignment="TOP" vgrow="NEVER" />
          </rowConstraints>
          <children>
-            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="59.0" prefWidth="445.0" spacing="40.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="59.0" prefWidth="312.0" spacing="45.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <children>
                   <Button fx:id="btVoltar" onAction="#handleVoltar" prefHeight="29.0" prefWidth="63.0" text="Voltar">
                      <font>
@@ -43,10 +44,10 @@
                   <Insets bottom="10.0" left="30.0" />
                </padding>
                <GridPane.margin>
-                  <Insets bottom="10.0" left="15.0" />
+                  <Insets bottom="10.0" left="92.0" />
                </GridPane.margin>
             </HBox>
-            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="189.0" prefWidth="456.0" GridPane.halignment="CENTER">
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="189.0" prefWidth="456.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <columnConstraints>
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="217.33331298828125" minWidth="10.0" prefWidth="127.33334604899089" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="346.3333613077799" minWidth="10.0" prefWidth="329.3333206176758" />
@@ -124,17 +125,21 @@
                   <Insets bottom="15.0" />
                </padding>
             </GridPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="99.0" text="Cadastro">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
          </children>
       </GridPane>
    </center>
    <top>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="99.0" text="Cadastro" BorderPane.alignment="CENTER">
-         <font>
-            <Font size="20.0" />
-         </font>
-         <padding>
-            <Insets top="20.0" />
-         </padding>
-      </Label>
+      <BorderPane prefHeight="27.0" prefWidth="541.0" BorderPane.alignment="CENTER" />
    </top>
+   <bottom>
+      <BorderPane prefHeight="27.0" prefWidth="541.0" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>

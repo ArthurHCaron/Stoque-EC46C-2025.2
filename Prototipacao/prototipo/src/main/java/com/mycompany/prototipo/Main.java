@@ -41,6 +41,8 @@ public class Main extends Application {
                     loginStage.setScene(login);
                     loginStage.centerOnScreen();
                 }
+                loginStage.sizeToScene();
+                
                 loginStage.setIconified(false);
                 loginStage.requestFocus();
                 loginStage.toFront();                
@@ -59,6 +61,8 @@ public class Main extends Application {
                     cadastroPStage.setScene(cadastroP);
                     cadastroPStage.centerOnScreen();
                 }
+                cadastroPStage.sizeToScene();
+                
                 cadastroPStage.setIconified(false);
                 cadastroPStage.requestFocus();
                 cadastroPStage.toFront();

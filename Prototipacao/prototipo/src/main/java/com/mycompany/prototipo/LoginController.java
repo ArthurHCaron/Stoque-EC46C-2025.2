@@ -66,6 +66,7 @@ public class LoginController implements Initializable {
             cadastroStage.centerOnScreen();
         }
         Main.hideLogin();
+        cadastroStage.sizeToScene();
         cadastroStage.setIconified(false);
         cadastroStage.requestFocus();
         cadastroStage.toFront();

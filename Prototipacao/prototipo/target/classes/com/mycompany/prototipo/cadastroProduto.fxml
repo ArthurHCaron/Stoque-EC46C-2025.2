@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="janela" prefHeight="421.0" prefWidth="665.0" stylesheets="@themes/dark-flat.css" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.prototipo.CadastroProdutoController">
+<BorderPane fx:id="janela" stylesheets="@themes/dark-flat.css" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.prototipo.CadastroProdutoController">
    <center>
       <BorderPane prefHeight="357.0" prefWidth="642.0" BorderPane.alignment="CENTER">
          <center>
@@ -20,11 +20,12 @@
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
                </columnConstraints>
                <rowConstraints>
-                  <RowConstraints maxHeight="251.0000203450521" minHeight="10.0" prefHeight="251.0000203450521" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="251.0000203450521" minHeight="10.0" prefHeight="60.666676839192704" valignment="CENTER" vgrow="NEVER" />
+                  <RowConstraints maxHeight="251.0000203450521" minHeight="10.0" prefHeight="235.3333231608073" valignment="CENTER" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="102.99998474121094" minHeight="10.0" prefHeight="56.33331298828125" valignment="CENTER" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="182.0" prefWidth="532.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="182.0" prefWidth="532.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                     <columnConstraints>
                       <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="239.66668701171875" minWidth="10.0" prefWidth="119.33332570393881" />
                       <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="392.66667429606116" />
@@ -100,7 +101,7 @@
                         <Insets right="10.0" />
                      </padding>
                   </GridPane>
-                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="500.0" spacing="30.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="507.0" spacing="30.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <children>
                         <Button fx:id="btCancelar" onAction="#handleCancelar" prefHeight="32.0" prefWidth="235.0" text="Cancelar">
                            <font>
@@ -114,20 +115,21 @@
                            </font>
                         </Button>
                      </children>
+                     <GridPane.margin>
+                        <Insets left="2.0" />
+                     </GridPane.margin>
                   </HBox>
+                  <Label prefHeight="30.0" prefWidth="189.0" text="Cadastro de Produto" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
                </children>
-               <padding>
-                  <Insets top="10.0" />
-               </padding>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
             </GridPane>
          </center>
-         <top>
-            <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="189.0" text="Cadastro de Produto" BorderPane.alignment="CENTER">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-         </top>
       </BorderPane>
    </center>
    <bottom>
@@ -137,7 +139,4 @@
          </BorderPane.margin>
       </BorderPane>
    </bottom>
-   <top>
-      <BorderPane prefHeight="31.0" prefWidth="642.0" BorderPane.alignment="CENTER" />
-   </top>
 </BorderPane>
