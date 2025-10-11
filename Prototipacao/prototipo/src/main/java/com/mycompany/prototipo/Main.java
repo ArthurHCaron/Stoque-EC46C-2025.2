@@ -20,8 +20,10 @@ import javafx.stage.Stage;
 public class Main extends Application {
     private Scene login;
     private Scene cadastroP;
+    private Scene consultaP;
     private static Stage loginStage;
     private static Stage cadastroPStage;
+    private static Stage consultaPStage;
     
     
     @Override
@@ -70,8 +72,30 @@ public class Main extends Application {
                 
             } catch (IOException ex) {}
         });
+        
+        Button btnConsultaProduto = new Button("Protótipo Consulta de Produto (US03)");
+        btnConsultaProduto.setOnAction(e -> {
+            try {                
+                if(consultaP==null) consultaP = new Scene(FXMLLoader.load(getClass().getResource("consultaProduto.fxml")));
+                
+                if(consultaPStage==null){
+                    consultaPStage = new Stage();
+                    consultaPStage.setScene(consultaP);
+                    consultaPStage.centerOnScreen();
+                }
+                consultaPStage.sizeToScene();
+                
+                consultaPStage.setIconified(false);
+                consultaPStage.requestFocus();
+                consultaPStage.toFront();
+                consultaPStage.show();
+                
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
 
-        vr.getChildren().addAll(btnLogin, btnCadastroProduto);
+        vr.getChildren().addAll(btnLogin, btnCadastroProduto, btnConsultaProduto);
         
         Scene scene = new Scene(vr);
         stage.setTitle("Seleção de Protótipo");
