@@ -42,11 +42,9 @@ public class Main extends Application {
                     loginStage = new Stage();
                     loginStage.setScene(login);
                     loginStage.centerOnScreen();
-                    loginStage.setWidth(440);
-                    loginStage.setHeight(330);
                     loginStage.setResizable(false);
                 }
-                //loginStage.sizeToScene();
+                loginStage.sizeToScene();
                 
                 loginStage.setIconified(false);
                 loginStage.requestFocus();
@@ -65,11 +63,9 @@ public class Main extends Application {
                     cadastroPStage = new Stage();
                     cadastroPStage.setScene(cadastroP);
                     cadastroPStage.centerOnScreen();
-                    cadastroPStage.setWidth(677);
-                    cadastroPStage.setHeight(435);
                     cadastroPStage.setResizable(false);
                 }
-                //cadastroPStage.sizeToScene();
+                cadastroPStage.sizeToScene();
                 
                 cadastroPStage.setIconified(false);
                 cadastroPStage.requestFocus();
@@ -88,8 +84,6 @@ public class Main extends Application {
                     consultaPStage = new Stage();
                     consultaPStage.setScene(consultaP);
                     consultaPStage.centerOnScreen();
-                    consultaPStage.setWidth(600);
-                    consultaPStage.setHeight(400);
                     consultaPStage.setResizable(false);
                 }
                 consultaPStage.sizeToScene();
